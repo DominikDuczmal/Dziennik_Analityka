@@ -10,7 +10,7 @@ Funkcjonalności projektowe:
 6. ................ Won't have 
 
 Technologie:
-Django, SQL, HTML, CSS
+Django, SQL, HTML, CSS, pytest
 
 Szkic
 https://wireframe.cc/zLsmfc
