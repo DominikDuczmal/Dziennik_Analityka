@@ -1,0 +1,9 @@
+{% extends 'exercises_app/base.html' %}
+{% block content %}
+    <h2> Laboratory: {{ Laboratory }}</h2>
+    <ul>
+        {% for lab in laboratory %}
+        <li>{{ lab.1 }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
