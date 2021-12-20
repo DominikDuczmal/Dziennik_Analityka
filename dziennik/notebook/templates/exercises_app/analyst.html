@@ -1,0 +1,17 @@
+{% extends 'exercises_app/base.html' %}
+{% block content %}
+    <h1>{{ student }}</h1>
+    <h2>Klasa: {{ analyst.get_Laboratory_display }}</h2>
+    <h3>Przedmioty:</h3>
+    <ul>
+        {% for subject in subjects %}
+            <li><a href="/{{ analyst.id }}/{{ analyst.id }}/"> {{ subject.name }} </a></li>
+        {% endfor %}
+    </ul>
+    <h3>Uwagi:</h3>
+    <ul>
+        {% for notice in analyst.analystnotice_set.all %}
+            <li>#{{ notice.id }} - {{ notice.content }}<br>- {{ notice.from_manager }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
